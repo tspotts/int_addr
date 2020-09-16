@@ -6,8 +6,8 @@ jobs:
   build:
 
     runs-on: [ ubuntu-latest ]
-    container:
-      image: centos:7
+#     container:
+#       image: centos:7
     strategy:
       matrix:
         python: [3.8]
