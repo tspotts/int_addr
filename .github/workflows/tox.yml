@@ -28,7 +28,7 @@ jobs:
 #          name: int_adder
 #          path: ./dist/int_adder
       - name: Compress binary
-        run: zip --junk-paths ./dist/int_adder
+        run: zip --junk-paths int_adder ./dist/int_adder
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
