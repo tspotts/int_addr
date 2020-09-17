@@ -20,3 +20,5 @@ jobs:
         run: pip install tox
       - name: Run Tox
         run: tox -e py
+      - name: Build binary with pyinstaller
+        run: pyinstaller --onefile int_adder/int_adder.py
