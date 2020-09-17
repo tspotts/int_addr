@@ -22,4 +22,8 @@ jobs:
         run: tox -e py
       - name: Build binary with pyinstaller
         run: pyinstaller --onefile ./int_addr/int_adder.py
-#         run: pwd; ls -la
+      - name: Test saving artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: int_adder
+          path: ./dist/int_adder
