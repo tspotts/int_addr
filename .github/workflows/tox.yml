@@ -21,5 +21,5 @@ jobs:
       - name: Run Tox
         run: tox -e py
       - name: Build binary with pyinstaller
-#         run: pyinstaller --onefile int_adder.py
-        run: pwd; ls -la
+        run: pyinstaller --onefile ./int_addr/int_adder.py
+#         run: pwd; ls -la
